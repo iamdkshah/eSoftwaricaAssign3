@@ -12,8 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.esoftwaricaassign3.R;
-import com.example.esoftwaricaassign3.adapters.UserAdapter;
-import com.example.esoftwaricaassign3.ui.dashboard.AddUser;
+import com.example.esoftwaricaassign3.adapters.StudentAdapter;
+import com.example.esoftwaricaassign3.ui.dashboard.AddStudents;
 
 public class HomeFragment extends Fragment {
     RecyclerView userRV;
@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment {
 
         userRV = root.findViewById(R.id.rv);
 
-        UserAdapter homeUserAdapter = new UserAdapter(root.getContext(), AddUser.userDetails);
+        StudentAdapter homeUserAdapter = new StudentAdapter(root.getContext(), AddStudents.userDetails);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         userRV.setLayoutManager(layoutManager);
         userRV.setAdapter(homeUserAdapter);

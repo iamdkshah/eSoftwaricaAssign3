@@ -16,11 +16,11 @@ import com.example.esoftwaricaassign3.models.UserModel;
 
 import java.util.List;
 
-public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
+public class StudentAdapter extends RecyclerView.Adapter<StudentAdapter.UserHolder> {
     Context context;
     List<UserModel> data;
 
-    public UserAdapter(Context context,List<UserModel> data) {
+    public StudentAdapter(Context context, List<UserModel> data) {
 
         this.context = context;
         this.data = data;
@@ -29,7 +29,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.UserHolder> {
     @NonNull
     @Override
     public UserHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.user_list,parent,false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.student_list,parent,false);
             UserHolder holderObject = new UserHolder(view);
         return holderObject;
     }

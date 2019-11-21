@@ -8,7 +8,7 @@
         android:id="@+id/txtHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add User Details"
+        android:text="Add Student Details"
         android:textSize="45dp"
         android:textColor="#1ca9c9"
         android:textStyle="bold"
@@ -98,6 +98,6 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginTop="20dp"
-        android:text="Add User"/>
+        android:text="Add Student"/>
 
 </RelativeLayout>

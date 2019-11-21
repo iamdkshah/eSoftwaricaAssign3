@@ -13,8 +13,8 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.esoftwaricaassign3.ui.dashboard.AddUser"
-        android:label="@string/title_users"
+        android:name="com.example.esoftwaricaassign3.ui.dashboard.AddStudents"
+        android:label="@string/title_student"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment

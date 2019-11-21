@@ -10,10 +10,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.esoftwaricaassign3.R;
@@ -22,7 +20,7 @@ import com.example.esoftwaricaassign3.models.UserModel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddUser extends Fragment {
+public class AddStudents extends Fragment {
     EditText editName, editAddress, editAge;
     RadioGroup checkGender;
     RadioButton male,female, other;
@@ -37,7 +35,7 @@ public class AddUser extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         dashboardViewModel =
                 ViewModelProviders.of(this).get(DashboardViewModel.class);
-       final View root = inflater.inflate(R.layout.add_user, container, false);
+       final View root = inflater.inflate(R.layout.add_student, container, false);
 
         editName = root.findViewById(R.id.editName);
         editAddress = root.findViewById(R.id.editAddress);

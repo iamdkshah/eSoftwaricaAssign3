@@ -2,10 +2,8 @@ package com.example.esoftwaricaassign3;
 
 import android.os.Bundle;
 
-import com.example.esoftwaricaassign3.adapters.UserAdapter;
 import com.example.esoftwaricaassign3.models.UserModel;
-import com.example.esoftwaricaassign3.ui.dashboard.AddUser;
-import com.example.esoftwaricaassign3.ui.home.HomeFragment;
+import com.example.esoftwaricaassign3.ui.dashboard.AddStudents;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,9 +11,6 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
-        AddUser.userDetails.add(new UserModel("Shah Rukh Khan", "54","Bandra, Mumbai", "male"));
-        AddUser.userDetails.add(new UserModel("Gauri Khan", "50","Bandra, Mumbai", "female"));
-        AddUser.userDetails.add(new UserModel("Aryan Khan", "22","Bandra, Mumbai", "male"));
+        AddStudents.userDetails.add(new UserModel("Shah Rukh Khan", "54","Bandra, Mumbai", "male"));
+        AddStudents.userDetails.add(new UserModel("Gauri Khan", "50","Bandra, Mumbai", "female"));
+        AddStudents.userDetails.add(new UserModel("Aryan Khan", "22","Bandra, Mumbai", "male"));
 
 
 
