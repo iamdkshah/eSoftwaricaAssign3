@@ -2,6 +2,9 @@ package com.example.esoftwaricaassign3;
 
 import android.os.Bundle;
 
+import com.example.esoftwaricaassign3.adapters.UserAdapter;
+import com.example.esoftwaricaassign3.ui.dashboard.AddUser;
+import com.example.esoftwaricaassign3.ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,5 +29,4 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
     }
-
 }

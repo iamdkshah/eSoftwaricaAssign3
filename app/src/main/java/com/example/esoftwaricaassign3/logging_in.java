@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class logging_in extends AppCompatActivity {
     EditText userPassword, userID;
@@ -34,6 +35,12 @@ public class logging_in extends AppCompatActivity {
         if ((uID.equals("softwarica") ) && (uPassword.equals("coventry"))){
             Intent intent = new Intent(logging_in.this, MainActivity.class);
             startActivity(intent);
+        }else{
+            Toast.makeText(this, "Opps...Wrong Entry!!! ", Toast.LENGTH_SHORT).show();
+        } if (uID.isEmpty()){
+            Toast.makeText(this, "Username Is Empty! Please Enter Username", Toast.LENGTH_SHORT).show();
+        } if (uPassword.isEmpty()){
+            Toast.makeText(this, "Password is Empty! Please Enter Password", Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -1,4 +1,4 @@
-package com.example.esoftwaricaassign3.ui.dashboard;
+package com.example.esoftwaricaassign3.models;
 
 import java.io.Serializable;
 

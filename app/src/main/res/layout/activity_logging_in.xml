@@ -10,34 +10,30 @@
         android:src="@drawable/softwarica"
         android:layout_marginTop="30dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Username"
-        android:textSize="20dp"
-        android:layout_marginLeft="5dp"
-        android:textColor="#FF0000"/>
-
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <EditText
         android:id="@+id/userID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:hint="username"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        android:textSize="20dp"
-        android:layout_marginLeft="5dp"
-        android:textColor="#FF0000"/>
+
+        android:hint="Username"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <EditText
         android:id="@+id/userPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:inputType="textPassword"
         android:layout_marginLeft="5dp"
-        android:hint="password"/>
+        android:hint="Password"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/loginBTN"
@@ -45,7 +41,8 @@
         android:layout_height="wrap_content"
         android:text="LOG IN"
         android:textSize="30dp"
-        android:layout_marginTop="10dp"
+
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:background="#B0E0E6"/>
